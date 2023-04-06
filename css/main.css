@@ -181,6 +181,32 @@
 
 #container {}
 
+.main-slider {
+    position: relative;
+}
+
+.main-slider img {
+    width: 100%;
+}
+
+.slider-title {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.slider-content {
+    width: 32%;
+}
+
+.info-nav {}
+
+.more-details {}
+
+.find-avail {}
+
+.sub-content {}
+
 
 /* Footer */
 
