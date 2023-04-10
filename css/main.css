@@ -210,4 +210,159 @@
 
 /* Footer */
 
+#our_recommendations{
+    height: 745px;
+    width: 100%;
+}
+
+#our_vehicles{
+    height: 2300px;
+    width: 100%;
+    
+}
+
+.title_ov{
+    height: 110px;
+    width: 100%;
+    font-size: larger;
+    margin-left: 105px;
+}
+
+.menu_ov{
+    width: 100%;
+    height: 60px;
+    margin-left: 85px;
+    display: flex;
+}
+.allmode{
+    width: 130px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+.Mercedes-eq{
+    width: 185px;
+    font-size: larger;
+    background-color: white;
+    border-right: none;
+}
+.amg{
+    width: 140px;
+    font-size: larger;
+    background-color: white;
+    border-right: none;
+}
+.maybach{
+    width: 145px;
+    font-size: larger;
+    background-color: white;
+}
+#conlai_ov{
+    width: 1690px;
+    display: flex;
+    margin-left: 105px;
+    margin-top: 30px;
+}
+.left_conlai_ov{
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+}
+.fueltype{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btelectronic{
+    height: 30px;
+    width: 30px;
+}
+.btandelec{
+    align-items: center;
+    display: flex;
+}
+.bodytype{
+    height: 165px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loaixe{
+    width: 115px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.seeall{
+    font-size: larger;
+    width: 100px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.right_conlai_ov{
+    border-left: 1px solid black;
+    width: 1110px;
+    height: 100%;
+}
+.dong_sedans{
+    height: 550px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.tendongxe{
+    border-bottom: 1px solid black;
+}
+.chuadongxe{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 230px;
+}
+.ten_gia_hinh{
+    height: 250px;
+    width: 255px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.hinhxe{
+    height: 125px;
+    width: 240px;
+}
+.ten_gia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gia{
+    color: gray;
+}
+.dong_suvs{
+    height: 850px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.dong_coupes{
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 100px;
+}
+.chuadongxecp{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 230px;
+    margin-top: 45px;
+}
 #footer {}
