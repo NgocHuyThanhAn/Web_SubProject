@@ -179,10 +179,29 @@
 
 /* Container */
 
-#container {}
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .main-slider {
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-upToDown {
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    inset: 0px;
+    position: absolute;
+}
+
+.overlay-leftToRight {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    inset: 0px;
+    position: absolute;
 }
 
 .main-slider img {
@@ -190,18 +209,48 @@
 }
 
 .slider-title {
-    top: 0;
+    top: 20%;
     position: absolute;
-    width: 100%;
+    width: 90%;
 }
 
 .slider-content {
-    width: 32%;
+    width: 36%;
 }
 
-.info-nav {}
+.slider-content h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
 
-.more-details {}
+.slider-content p {
+    color: #6f7274;
+    margin-bottom: 80px;
+}
+
+.info-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 90px;
+}
+
+.sub-content p {
+    font-size: 12px;
+    color: #6f7274;
+}
+
+.more-details {
+    width: 70%;
+    padding: 16px 10px;
+    border: 1px solid #919496;
+    color: #919496;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
 
 .find-avail {}
 
@@ -210,121 +259,181 @@
 
 /* Footer */
 
-#our_recommendations{
-    height: 745px;
+#our_recommendations {
+    width: 90%;
+    margin: 80px 0;
+}
+
+#our_recommendations h1 {
+    margin-bottom: 40px;
+}
+
+.item-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.recomen-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 5px #e9edef;
+}
+
+.item-img {
+    line-height: 0;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.item-img img {
     width: 100%;
 }
 
-#our_vehicles{
-    height: 2300px;
-    width: 100%;
-    
+.item-content {
+    width: 70%;
+    padding-bottom: 80px;
 }
 
-.title_ov{
+.item-btn {
+    width: 70%;
+    padding: 16px 10px;
+    background-color: #0078d6;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#our_vehicles {
+    width: 1440px;
+    width: 100%;
+}
+
+.title_ov {
     height: 110px;
     width: 100%;
     font-size: larger;
     margin-left: 105px;
 }
 
-.menu_ov{
+.menu_ov {
     width: 100%;
     height: 60px;
     margin-left: 85px;
     display: flex;
 }
-.allmode{
+
+.allmode {
     width: 130px;
     background-color: black;
     color: white;
     font-size: larger;
 }
-.Mercedes-eq{
+
+.Mercedes-eq {
     width: 185px;
     font-size: larger;
     background-color: white;
     border-right: none;
 }
-.amg{
+
+.amg {
     width: 140px;
     font-size: larger;
     background-color: white;
     border-right: none;
 }
-.maybach{
+
+.maybach {
     width: 145px;
     font-size: larger;
     background-color: white;
 }
-#conlai_ov{
-    width: 1690px;
+
+#conlai_ov {
+    width: 1440px;
     display: flex;
     margin-left: 105px;
     margin-top: 30px;
 }
-.left_conlai_ov{
+
+.left_conlai_ov {
     width: 300px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     height: 315px;
 }
-.fueltype{
+
+.fueltype {
     width: 100%;
     height: 65px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.btelectronic{
+
+.btelectronic {
     height: 30px;
     width: 30px;
 }
-.btandelec{
+
+.btandelec {
     align-items: center;
     display: flex;
 }
-.bodytype{
+
+.bodytype {
     height: 165px;
     width: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.loaixe{
+
+.loaixe {
     width: 115px;
     height: 30px;
     display: flex;
     align-items: center;
 }
-.seeall{
+
+.seeall {
     font-size: larger;
     width: 100px;
     border-top: 1px solid black;
     padding-top: 10px;
 }
-.right_conlai_ov{
+
+.right_conlai_ov {
     border-left: 1px solid black;
     width: 1110px;
     height: 100%;
 }
-.dong_sedans{
+
+.dong_sedans {
     height: 550px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
 }
-.tendongxe{
+
+.tendongxe {
     border-bottom: 1px solid black;
 }
-.chuadongxe{
+
+.chuadongxe {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 230px;
 }
-.ten_gia_hinh{
+
+.ten_gia_hinh {
     height: 250px;
     width: 255px;
     flex-direction: column;
@@ -333,36 +442,43 @@
     margin-bottom: 50px;
     align-items: center;
 }
-.hinhxe{
+
+.hinhxe {
     height: 125px;
     width: 240px;
 }
-.ten_gia{
+
+.ten_gia {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.gia{
+
+.gia {
     color: gray;
 }
-.dong_suvs{
+
+.dong_suvs {
     height: 850px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
-.dong_coupes{
+
+.dong_coupes {
     height: 300px;
     flex-direction: column;
     display: flex;
     margin-top: 100px;
 }
-.chuadongxecp{
+
+.chuadongxecp {
     display: flex;
     justify-content: space-between;
     width: 65%;
     height: 230px;
     margin-top: 45px;
 }
+
 #footer {}
