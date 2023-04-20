@@ -309,21 +309,21 @@
 }
 
 #our_vehicles {
-    width: 1440px;
-    width: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title_ov {
     height: 110px;
     width: 100%;
     font-size: larger;
-    margin-left: 105px;
 }
 
 .menu_ov {
     width: 100%;
     height: 60px;
-    margin-left: 85px;
     display: flex;
 }
 
@@ -355,14 +355,13 @@
 }
 
 #conlai_ov {
-    width: 1440px;
+    width: 100%;
     display: flex;
-    margin-left: 105px;
     margin-top: 30px;
 }
 
 .left_conlai_ov {
-    width: 300px;
+    width: 20%;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -370,7 +369,7 @@
 }
 
 .fueltype {
-    width: 100%;
+    width: 80%;
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -482,12 +481,11 @@
 }
 
 #bangthongtin {
-    width: 1325px;
+    width: 90%;
     height: 225px;
     margin-top: 170px;
-    margin-left: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -522,7 +520,7 @@
 }
 
 #footer {
-    width: 1517px;
+    width: 100%;
     height: 610px;
     background-color: black;
     margin-top: 70px;
