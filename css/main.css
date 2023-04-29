@@ -644,3 +644,10 @@
     justify-content: space-between;
     align-items: center;
 }
+a.lienket{
+    color: white;
+    text-decoration: none;
+}
+a.lienket:hover{
+    text-decoration: underline;
+}
