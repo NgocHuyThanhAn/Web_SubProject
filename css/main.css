@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.display {
+    display: flex !important;
+}
+
 :root {
     --text-color: #262626;
 }
@@ -13,6 +17,7 @@
 }
 
 #wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,18 +136,32 @@
     width: 78%;
     font-size: 20px;
     align-items: center;
-    padding: 20px 0;
 }
+
+
+/* Header nav */
 
 .our-models,
 .buy-online,
 .shopping-guide,
 .service,
 .merc-world {
-    padding-right: 30px;
+    padding: 20px;
+    color: #6f7274;
 }
 
-.our-models {}
+.our-models:hover,
+.buy-online:hover,
+.shopping-guide:hover,
+.service:hover,
+.merc-world:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.our-models {
+    position: relative;
+}
 
 .our-models i {
     padding-right: 10px;
@@ -174,6 +193,44 @@
 .header-sub a {
     padding: 0 4px;
     color: #fff;
+}
+
+
+/* Our models nav */
+
+.form-list {
+    top: 170px;
+    left: 136px;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: 2px 2px 10px #5c5a5a;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 40px 80px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    height: 490px;
+}
+
+.form-list a,
+.form-list span,
+.form-list i {
+    padding-bottom: 32px;
+    color: #000;
+    text-decoration: none;
+}
+
+.form-list h2 {
+    padding-bottom: 40px;
+}
+
+.form-list i {
+    position: absolute;
+    top: 28px;
+    right: 40px;
 }
 
 
@@ -322,6 +379,8 @@
 }
 
 .menu_ov {
+    position: sticky;
+    top: 10px;
     width: 100%;
     height: 60px;
     display: flex;
@@ -485,7 +544,7 @@
     height: 225px;
     margin-top: 170px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -535,6 +594,11 @@
     flex-direction: column;
     color: white;
     font-size: x -large;
+}
+
+.above_ft:hover {
+    cursor: pointer;
+    color: #919496;
 }
 
 .middle_ft {

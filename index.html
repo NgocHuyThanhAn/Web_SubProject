@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
 </head>
 
 <body>
@@ -60,7 +64,7 @@
                         <h1>Privilege Offers 2023</h1>
                         <p>Only from March to April, customers will be given 01 free Mercedes-Benz Car Insurance package for 02 years provided by Bao Viet Insurance Company.</p>
                     </div>
-                    <div class="info-nav">
+                    <div class="info-nav ">
                         <div class="more-details">More details about promotion</div>
                         <div class="find-avail item-btn">Find available cars with offers</div>
                     </div>
@@ -70,10 +74,10 @@
                 </div>
             </div>
 
-            <div id="our_recommendations">
+            <div id="our_recommendations" class="row">
                 <h1>Our recommendation</h1>
-                <div class="item-wrapper carousel-inner row w-100 mx-auto" role="listbox">
-                    <div class="recomen-item carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                <div class="row item-wrapper">
+                    <div class="col-sm-3 recomen-item">
                         <div class="item-img">
                             <img src="./images/simple teaser (1).webp" alt="">
                         </div>
@@ -88,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="recomen-item carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-3 recomen-item">
                         <div class="item-img">
                             <img src="./images/Repair.webp" alt="">
                         </div>
@@ -103,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="recomen-item carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-3 recomen-item">
                         <div class="item-img">
                             <img src="./images/GSP_PC512400.webp" alt="">
                         </div>
@@ -118,7 +122,7 @@
                         </div>
                     </div>
 
-                    <div class="recomen-item carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-3 recomen-item">
                         <div class="item-img">
                             <img src="./images/simple teaser (2).webp" alt="">
                         </div>
@@ -142,10 +146,10 @@
             </div>
 
             <div class="menu_ov">
-                <button class="allmode">All models</button>
-                <button class="Mercedes-eq">Mercedes-eq</button>
-                <button class="amg"><b>AMG</b></button>
-                <button class="maybach">MAYBACH</button>
+                <button id="all-mode" class="allmode">All models</button>
+                <button id="sedans-mode" class="Mercedes-eq">Mercedes-eq</button>
+                <button id="suv-mode" class="amg"><b>AMG</b></button>
+                <button id="coupes-mode" class="maybach">MAYBACH</button>
             </div>
 
             <div id="conlai_ov">
@@ -185,7 +189,7 @@
 
                 <div class="right_conlai_ov">
                     <div class="dong_sedans">
-                        <div class="tendongxe">
+                        <div id="sedans-type" class="tendongxe">
                             Sedans
                         </div>
 
@@ -255,7 +259,7 @@
                     </div>
 
                     <div class="dong_suvs">
-                        <div class="tendongxe">
+                        <div id="suv-type" class="tendongxe">
                             SUVs
                         </div>
 
@@ -356,7 +360,7 @@
                     </div>
 
                     <div class="dong_coupes">
-                        <div class="tendongxe">
+                        <div id="coupes-type" class="tendongxe">
                             Coupés
                         </div>
 
@@ -385,9 +389,9 @@
         </div>
 
         <div id="bangthongtin">
-            <div class="btt">
-                <div>
-                    <button class="buttontt">
+            <div class="btt row">
+                <div class="col-sm-4">
+                    <button class="buttontt ">
                             <div><img src="images\tt1.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
                                 <div class="chitietindam">
@@ -400,7 +404,7 @@
                         </button>
                 </div>
 
-                <div>
+                <div class="col-sm-4">
                     <button class="buttontt">
                             <div><img src="images\tt2.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
@@ -414,7 +418,7 @@
                         </button>
                 </div>
 
-                <div>
+                <div class="col-sm-4">
                     <button class="buttontt">
                             <div><img src="images\tt3.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
@@ -429,8 +433,8 @@
                 </div>
             </div>
 
-            <div class="btt">
-                <div>
+            <div class="btt row">
+                <div class="col-sm-4">
                     <button class="buttontt">
                             <div><img src="images\tt4.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
@@ -443,7 +447,7 @@
                         </button>
                 </div>
 
-                <div>
+                <div class="col-sm-4">
                     <button class="buttontt">
                             <div><img src="images\tt5.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
@@ -457,7 +461,7 @@
                         </button>
                 </div>
 
-                <div>
+                <div class="col-sm-4">
                     <button class="buttontt">
                             <div><img src="images\tt6.png" alt="" class="hinhtt"></div>
                             <div class="chitiettt">
@@ -474,7 +478,7 @@
         </div>
 
         <div id="footer">
-            <div class="above_ft">
+            <div id="on-top" class="above_ft">
                 <div><b>︿</b></div>
                 <div style="margin-top: 20px;">Up</div>
             </div>
@@ -537,11 +541,88 @@
                 </div>
             </div>
         </div>
+
+        <div class="form-list our-models-nav">
+            <i id="close-active-1" class="fa-solid fa-xmark"></i>
+            <h2>Our models</h2>
+            <a href="">Show all models</a>
+            <a href="">Sedan</a>
+            <a href="">SUV / Off-roader</a>
+            <a href="">Coupes</a>
+            <a href="">MPV/Van</a>
+            <a href="">Mercedes-EQ</a>
+            <a href="">Mercedes-AMG</a>
+            <a href="">Mercedes-Maybach</a>
+            <a href="">New models</a>
+            <span class="configure-nav">
+                    <i class="fa-solid fa-car-wrench"></i>
+                    Configure your car
+                </span>
+            <span class="buy-nav">
+                    <i class="fa-solid fa-cart-shopping-fast"></i>
+                    New car online store
+                </span>
+            <span class="test-nav">
+                    <i class="fa-solid fa-steering-wheel"></i>
+                    Book a test drive
+                </span>
+        </div>
+
+        <div class="form-list buy-online-nav">
+            <i id="close-active-2" class="fa-solid fa-xmark"></i>
+            <h2>Buy online</h2>
+            <a href="">New car</a>
+            <a href="">Used car</a>
+            <a href="">Accessories</a>
+            <a href="">Collection & Merchandise</a>
+        </div>
+
+        <div class="form-list shopping-guide-nav">
+            <i id="close-active-3" class="fa-solid fa-xmark"></i>
+            <h2>Shopping guide</h2>
+            <a href="">Configure your car</a>
+            <a href="">Book a test drive</a>
+            <a href="">Find your dealer</a>
+            <a href="">Price lists & brochures</a>
+            <a href="">Fleets & Business Customers</a>
+        </div>
+
+        <div class="form-list services-nav">
+            <i id="close-active-4" class="fa-solid fa-xmark"></i>
+            <h2>Services</h2>
+            <a href="">Online service appointment booking</a>
+            <a href="">Services & Maintenance</a>
+            <a href="">Warranty & Insurance</a>
+            <a href="">Parts & accessories</a>
+            <a href="">Mercedes Lifestyle</a>
+            <a href="">Care Tips</a>
+            <a href="">Vehicle recall announcements</a>
+            <span class="book-apointment">
+                    <i class="fa-solid fa-calendar-circle-plus"></i>
+                    Book your service appointment
+                </span>
+        </div>
+
+        <div class="form-list merc-world-nav">
+            <i id="close-active-5" class="fa-solid fa-xmark"></i>
+            <h2>Mercedes-Benz World</h2>
+            <a href="">MBUX multimedia system</a>
+            <a href="">Safety and assistance systems</a>
+            <a href="">Design & Concept Vehicles</a>
+            <a href="">Sustainability</a>
+            <a href="">About Mercedes-Benz Vietnam</a>
+            <a href="">Mercedes-AMG</a>
+        </div>
     </div>
-    </div>
+    <!-- Our models -->
+
+
+
 
 
 </body>
-
+<script src="./control.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>
