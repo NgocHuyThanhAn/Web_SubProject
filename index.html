@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../Web_SubProject/css/bootstrap.css">
+    <script src="../js/jquery-3.6.4.js"></script>
+    <script src="/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -65,8 +69,7 @@
                         <p>Only from March to April, customers will be given 01 free Mercedes-Benz Car Insurance package for 02 years provided by Bao Viet Insurance Company.</p>
                     </div>
                     <div class="info-nav ">
-                        <div class="more-details"><b>More details about promotion</b></div>
-                        <!-- <div class="find-avail item-btn">Find available cars with offers</div> -->
+                        <div class="more-details" ><b data-toggle="modal" data-target="#ModalDangKy">More details about promotion</b></div>
                         <div class="find-avail item-btn"><a href="https://www.mercedes-benz.com.vn/en/passengercars/buy/new-car/search-results.html?emhsort=price-asc&emhvehicleAssortment=vehicles&sort=price-asc&_gl=1*u18sey*_ga*Nzc1MTc0MDg4LjE2NzUxMzQ2Nzk.*_ga_0Q0YZ92E6R*&_ga=2.81111191.1466730920.1677468333-775174088.1675134679&emhmodel=C-CLASS%2CE-CLASS%2CGLB%2CGLC%2CGLE%2CGLS%2CGT%2CS-CLASS" class="btacwo"><b>available cars with offers</b></a></div>
                     </div>
                     <div class="sub-content">
@@ -668,6 +671,89 @@
             <a href="">Mercedes-AMG</a>
         </div>
     </div>
+
+     <div class="modal fade" id="ModalDangKy" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Gửi yêu cầu tư vấn</h2>
+                    <button type="button" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p>Danh xưng*</p>
+                        <input name="gioitinh" type="radio" value="Ông">
+                        <label for="Ông">Ông</label>
+                        <input name="gioitinh" type="radio" value="Bà">
+                        <label for="Bà">Bà</label>                        
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên*">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Email*">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Số điện thoại*">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Vui lòng chọn một dòng xe*</p>
+                        <select name="Dongxe" id="">
+                            <option value="">C-Class</option>
+                            <option value="">E-Class</option>
+                            <option value="">S-Class</option>
+                            <option value="">GLE</option>
+                            <option value="">GLC</option>
+                            <option value="">GLS</option>
+                            <option value="">AMG</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Vui lòng chọn nhà phân phối bạn muốn</p>
+                        <select name="NPP" id="">
+                            <option value="">Thành phố Hồ chí Minh</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Hải Phòng</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Cần Thơ</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#">Chính sách bảo mật thông tin</a>
+                        <br>
+                        <input type="checkbox">
+                        <label for="">Tôi đã đọc và đồng ý với chính sách bảo mật thông tín</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Tôi đồng ý nhận thông tin qua*</p>
+                        <input name="phuongtien" type="radio" value="Điện thoại">
+                        <label for="Điện thoại">ĐIện thoại</label>
+                        <input name="phuongtien" type="radio" value="Email">
+                        <label for="Email">Email</label>  
+                        <input name="phuongtien" type="radio" value="Tin nhắn">
+                        <label for="Tin nhắn">Tin nhắn</label>
+                        <input name="phuongtien" type="radio" value="Thư tay">
+                        <label for="Thư tay">Thư tay</label>  
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     <!-- Our models -->
 
 
@@ -675,7 +761,7 @@
 
 
 </body>
-<script src="./control.js"></script>
+<script src="../js/control.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
