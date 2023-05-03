@@ -3,8 +3,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .display {
     display: flex !important;
+}
+
+.displayModal {
+    display: block !important;
 }
 
 :root {
@@ -21,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -97,10 +106,6 @@
     margin-right: 4px;
 }
 
-.vietnam-lan {}
-
-.header-below {}
-
 .search-feat {
     position: relative;
 }
@@ -166,14 +171,6 @@
 .our-models i {
     padding-right: 10px;
 }
-
-.buy-online {}
-
-.shopping-guide {}
-
-.service {}
-
-.merc-world {}
 
 .border-bottom {
     width: 100%;
@@ -255,6 +252,12 @@
     position: absolute;
 }
 
+.black-bgr {
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+}
+
 .overlay-leftToRight {
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
     inset: 0px;
@@ -305,13 +308,9 @@
     color: #919496;
     border-radius: 3px;
     margin-bottom: 30px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     text-align: center;
 }
-
-.find-avail {}
-
-.sub-content {}
 
 
 /* Footer */
@@ -428,8 +427,7 @@
 }
 
 .fueltype {
-    width: 80%;
-    height: 65px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -439,44 +437,43 @@
     height: 30px;
     width: 30px;
 }
-.btelectric{
-    border-radius: 45%;
-}
+
 .btandelec {
     align-items: center;
     display: flex;
 }
 
 .bodytype {
-    height: 165px;
-    width: 135px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .loaixe {
-    width: 115px;
+    width: 100%;
     height: 30px;
     display: flex;
     align-items: center;
 }
 
+.bodytype .loaixe {
+    padding-bottom: 10px;
+}
+
 .seeall {
     font-size: larger;
-    width: 100px;
+    width: 100%;
     border-top: 1px solid black;
     padding-top: 10px;
 }
 
 .right_conlai_ov {
     border-left: 1px solid black;
-    width: 1110px;
-    height: 100%;
+    width: 80%;
 }
 
 .dong_sedans {
-    height: 550px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -490,12 +487,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 230px;
 }
 
 .ten_gia_hinh {
-    height: 250px;
-    width: 255px;
+    width: 33.333%;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -504,8 +499,7 @@
 }
 
 .hinhxe {
-    height: 125px;
-    width: 240px;
+    width: 80%;
 }
 
 .ten_gia {
@@ -519,7 +513,6 @@
 }
 
 .dong_suvs {
-    height: 850px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -527,7 +520,6 @@
 }
 
 .dong_coupes {
-    height: 300px;
     flex-direction: column;
     display: flex;
     margin-top: 100px;
@@ -537,13 +529,11 @@
     display: flex;
     justify-content: space-between;
     width: 65%;
-    height: 230px;
     margin-top: 45px;
 }
 
 #bangthongtin {
-    width: 90%;
-    height: 225px;
+    width: 93%;
     margin-top: 170px;
     display: flex;
     justify-content: space-between;
@@ -552,50 +542,60 @@
 
 .btt {
     width: 100%;
-    height: 105px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.btt-l-4 {
+    max-width: 31%;
 }
 
 .buttontt {
-    width: 410px;
-    height: 105px;
+    width: 100%;
     display: flex;
     background-color: white;
+    padding: 10px;
+    align-items: center;
 }
 
 .hinhtt {
-    margin-top: 15px;
+    width: 100%;
 }
 
 .chitiettt {
     font-size: 18px;
-    margin-top: 30px;
-    width: 355px;
+    width: 90%;
 }
 
 .chitietindam {
     display: flex;
     justify-content: flex-start;
-    margin-left: 10px;
+    font-size: 14px;
 }
+
+
+/* Footer */
 
 #footer {
     width: 100%;
-    height: 610px;
     background-color: black;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .above_ft {
     width: 100%;
-    height: 215px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
     font-size: x -large;
+    padding-top: 40px;
 }
 
 .above_ft:hover {
@@ -604,55 +604,100 @@
 }
 
 .middle_ft {
-    height: 215px;
-    width: 1050px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-left: 105px;
     color: white;
+    margin-top: 40px;
 }
 
 .menu_ft {
-    width: 170px;
-    height: 100%;
+    width: 20%;
     flex-direction: column;
     display: flex;
     justify-content: space-around;
 }
 
+.menu_ft p {
+    padding: 4px 0;
+}
+
 .below_ft {
-    width: 1315px;
-    height: 85px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid white;
-    margin-left: 105px;
     margin-top: 70px;
+    padding-bottom: 20px;
 }
 
 .left_blft {
-    width: 430px;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
 }
 
+.left_blft div {
+    padding-right: 8px;
+}
+
 .right_blft {
-    width: 220px;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-a.lienket{
+
+.menu_ft a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.lienket {
     color: white;
     text-decoration: none;
 }
-a.lienket:hover{
+
+a.lienket:hover {
     text-decoration: underline;
 }
+
+.readmore {
+    font-size: xx-large;
+    margin-top: 6%;
+    opacity: 0;
+    color: #0078d6;
+}
+
+/* .buttontt:hover {
+    transform: scale(1.1);
+    background-color: #a8a2a2;
+    .chitiett{
+        margin-left: -30%;
+    }
+    .hinhtt{
+        display: none;
+        
+    }
+    .readmore{
+        opacity: 1;
+        text-decoration: none;
+    }
+}
+
+.chitiett {
+    margin-left: -30%;
+}
+
+.hinhtt {
+    display: none;
+}
+
+.readmore {
+    opacity: 1;
+    text-decoration: none;
+} */
+
 .readmore{
     font-size: xx-large;
     margin-top: 6%;
@@ -674,10 +719,55 @@ a.lienket:hover{
         text-decoration: none;
     }
 }
-a.bttlienket{
+
+a.bttlienket {
     text-decoration: none;
 }
-a.btacwo{
+
+a.btacwo {
     color: white;
     text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 40%;
+    border: 1px solid #ccc;
+    top: 10%;
+    right: 32%;
+    background: #fff
+}
+
+.modal-dialog {}
+
+.modal-content {}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.modal-body {
+    margin-left: 10px;
+}
+
+.form-group {
+    padding: 12px 0;
+}
+
+.modal-footer {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    float: right;
 }
