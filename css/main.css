@@ -11,6 +11,10 @@ html {
     display: flex !important;
 }
 
+.displayModal {
+    display: block !important;
+}
+
 :root {
     --text-color: #262626;
 }
@@ -102,10 +106,6 @@ html {
     margin-right: 4px;
 }
 
-.vietnam-lan {}
-
-.header-below {}
-
 .search-feat {
     position: relative;
 }
@@ -171,14 +171,6 @@ html {
 .our-models i {
     padding-right: 10px;
 }
-
-.buy-online {}
-
-.shopping-guide {}
-
-.service {}
-
-.merc-world {}
 
 .border-bottom {
     width: 100%;
@@ -319,10 +311,6 @@ html {
     /* margin-right: 10px; */
     text-align: center;
 }
-
-.find-avail {}
-
-.sub-content {}
 
 
 /* Footer */
@@ -658,4 +646,95 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu_ft a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.lienket {
+    color: white;
+    text-decoration: none;
+}
+
+a.lienket:hover {
+    text-decoration: underline;
+}
+
+.readmore {
+    font-size: xx-large;
+    margin-top: 6%;
+    opacity: 0;
+    color: #0078d6;
+}
+
+.buttontt:hover {
+    transform: scale(1.1);
+    background-color: #a8a2a2;
+}
+
+.chitiett {
+    margin-left: -30%;
+}
+
+.hinhtt {
+    display: none;
+}
+
+.readmore {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a.bttlienket {
+    text-decoration: none;
+}
+
+a.btacwo {
+    color: white;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 40%;
+    border: 1px solid #ccc;
+    top: 10%;
+    right: 32%;
+    background: #fff
+}
+
+.modal-dialog {}
+
+.modal-content {}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.modal-body {
+    margin-left: 10px;
+}
+
+.form-group {
+    padding: 12px 0;
+}
+
+.modal-footer {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    float: right;
 }

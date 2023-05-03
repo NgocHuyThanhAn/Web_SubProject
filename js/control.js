@@ -90,3 +90,18 @@ sedanMode.addEventListener("click", scrollTo(sedans));
 suvMode.addEventListener("click", scrollTo(suv));
 coupesMode.addEventListener("click", scrollTo(coupes));
 allmode.addEventListener("click", scrollTo(ourVehicles));
+
+var modalSend = document.getElementById("show-modal");
+var modalRegist = document.getElementById("modal-regist");
+var closeBtn = document.getElementById("close-btn");
+
+function showModal() {
+    modalRegist.classList.add("displayModal");
+}
+
+function removeModal() {
+    modalRegist.classList.remove("displayModal");
+}
+
+modalSend.addEventListener("click", showModal);
+closeBtn.addEventListener("click", removeModal);

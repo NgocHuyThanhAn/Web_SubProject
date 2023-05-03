@@ -83,7 +83,7 @@
                         <p>Only from March to April, customers will be given 01 free Mercedes-Benz Car Insurance package for 02 years provided by Bao Viet Insurance Company.</p>
                     </div>
                     <div class="info-nav row info-nav-t info-nav-m">
-                        <div class="more-details col l-6 m-6 c-12">More details about promotion</div>
+                        <div id="show-modal" class="more-details col l-6 m-6 c-12">More details about promotion</div>
                         <div class="find-avail item-btn col l-6 m-6 c-12">Find available cars with offers</div>
                     </div>
                     <div class="sub-content">
@@ -424,25 +424,6 @@
                                 <p>➜</p>
                             </div>
                         </button>
-                </div> -->
-                <div class="col-sm-4">
-                    <a href="https://www.mercedes-benz.com.vn/en/passengercars/test-drive.html?group=all&subgroup=all.saloon&view=BODYTYPE" class="bttlienket">
-                        <button class="buttontt ">
-                            <div><img src="images\tt1.png" alt="" class="hinhtt"></div>
-                            <div class="chitiettt">
-                                <div class="chitietindam">
-                                    <b>Book a test drive</b>
-                                </div>
-                                <div class="chitietindam">
-                                    Test drive your preferred model
-                                </div>                         
-                            </div>
-                            <div class="readmore">
-                                <p>➜</p>
-                            </div>
-                        </button>
-                    </a>
-
                 </div>
 
                 <div class="btt-l-4 col l-4 m-5-t c-12 pd-10-m">
@@ -495,6 +476,9 @@
                                 <div class="chitietindam">
                                     Select your preferred configuration                           
                                 </div>                         
+                            </div>
+                            <div class="readmore">
+                                <p>➜</p>
                             </div>
                     </button>
                 </div>
@@ -700,12 +684,12 @@
         </div>
     </div>
 
-    <div class="modal fade" id="ModalDangKy" role="dialog">
+    <div class="modal fade" id="modal-regist" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2>Gửi yêu cầu tư vấn</h2>
-                    <button type="button" data-dismiss="modal">&times;</button>
+                    <button id="close-btn" type="button" data-dismiss="modal">&times;</button>
                 </div>
 
                 <div class="modal-body">
@@ -775,7 +759,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                    <button id="close-btn" type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
                 </div>
             </div>
 
@@ -789,6 +773,6 @@
 
 
 </body>
-<script src="./control.js"></script>
+<script src="./js/control.js"></script>
 
 </html>
