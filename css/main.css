@@ -667,10 +667,11 @@ a.lienket:hover{
     }
     .hinhtt{
         display: none;
-        text-decoration: none;
+        
     }
     .readmore{
         opacity: 1;
+        text-decoration: none;
     }
 }
 a.bttlienket{
