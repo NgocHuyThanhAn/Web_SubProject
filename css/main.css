@@ -729,6 +729,17 @@ a.btacwo {
     text-decoration: none;
 }
 
+a.ahv{
+    text-decoration: none;
+}
+a.ahv:hover{
+    text-decoration: none;
+}
+
+a.find-available{
+    text-decoration: none;
+    color: white;
+}
 .modal {
     display: none;
     position: absolute;
@@ -738,6 +749,7 @@ a.btacwo {
     right: 32%;
     background: #fff
 }
+
 
 .modal-dialog {}
 
