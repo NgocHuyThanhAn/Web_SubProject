@@ -446,11 +446,10 @@ html {
 }
 
 .btelectronic {
-    width: 10%;
+    height: 30px;
+    width: 30px;
 }
-.btelectric{
-    border-radius: 45%;
-}
+
 .btandelec {
     align-items: center;
     display: flex;
@@ -659,44 +658,4 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-<<<<<<< HEAD
-a.lienket{
-    color: white;
-    text-decoration: none;
-}
-a.lienket:hover{
-    text-decoration: underline;
-}
-.readmore{
-    font-size: xx-large;
-    margin-top: 6%;
-    opacity: 0;
-    color: #0078d6;
-}
-.buttontt:hover{
-    transform: scale(1.1);
-    background-color: #a8a2a2;
-    .chitiett{
-        margin-left: -30%;
-    }
-    .hinhtt{
-        display: none;
-        text-decoration: none;
-    }
-    .readmore{
-        opacity: 1;
-    }
-}
-a.bttlienket{
-    text-decoration: none;
-}
-a.btacwo{
-    color: white;
-    text-decoration: none;
-=======
-
-.right_blft div {
-    padding-right: 4px;
->>>>>>> f0c8f0a (Updated repondsive on tablet, mobile and pc screen)
 }
